@@ -7,6 +7,21 @@
   <title>PHP Badwords</title>
 </head>
 <body>
-  
+  <?php
+    $lorem = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique laboriosam accusantium sint voluptate sed, totam, animi sit praesentium temporibus alias dolore impedit aliquid velit autem reiciendis nihil, ea repellat aut?";
+    $lorem_length = strlen($lorem);
+  ?>
+  <h2>Paragrafo da visualizzare:</h2>
+  <p>
+    <?php
+      echo $lorem;
+    ?>
+  </p>
+  <h3>
+    Numero di parole del paragrafo: 
+    <?php
+      echo $lorem_length;
+    ?>
+  </h3>
 </body>
 </html>
