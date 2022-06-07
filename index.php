@@ -15,10 +15,9 @@
   <p>
     <?php echo $lorem; ?>
   </p>
-  <h3> Numero di parole del paragrafo: 
-    <?php
-      echo $lorem_length;
-    ?>
+  <h3> 
+    Numero di lettere del paragrafo: 
+    <?php echo $lorem_length; ?>
   </h3>
 
   <?php
@@ -27,14 +26,13 @@
     // ad esewmpio http://localhost/php-badwords/?badword=sit
   ?>
 
-  <h2> Paragrafo censurato:</h2>
+  <h2>Paragrafo censurato:</h2>
   <p>
     <?php echo $censored; ?>
   </p>
-  <h3> Numero di parole del paragrafo: 
-    <?php
-      echo $lorem_length;
-    ?>
+  <h3> 
+    Numero di lettere del paragrafo: 
+    <?php echo $lorem_length; ?>
   </h3>
 </body>
 </html>
