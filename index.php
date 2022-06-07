@@ -13,12 +13,25 @@
   ?>
   <h2>Paragrafo da visualizzare:</h2>
   <p>
-    <?php
-      echo $lorem;
-    ?>
+    <?php echo $lorem; ?>
   </p>
-  <h3>
-    Numero di parole del paragrafo: 
+  <h3> Numero di parole del paragrafo: 
+    <?php
+      echo $lorem_length;
+    ?>
+  </h3>
+
+  <?php
+    $badword = $_GET['badword'];
+    $censored = str_replace($badword, "***", $lorem);
+    // ad esewmpio http://localhost/php-badwords/?badword=sit
+  ?>
+
+  <h2> Paragrafo censurato:</h2>
+  <p>
+    <?php echo $censored; ?>
+  </p>
+  <h3> Numero di parole del paragrafo: 
     <?php
       echo $lorem_length;
     ?>
